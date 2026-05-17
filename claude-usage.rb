@@ -5,21 +5,21 @@
 class ClaudeUsage < Formula
   desc "Know how much of your Claude.ai plan you've burned — from your terminal."
   homepage "https://github.com/tonydisco/claude-usage"
-  version "0.5.3"
+  version "0.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.3/claude-usage_0.5.3_Darwin_x86_64.tar.gz"
-      sha256 "41c086656dfd91df34510ea4abca44ad9110320c11d40e36dc9b77289a056f0c"
+      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.4/claude-usage_0.5.4_Darwin_x86_64.tar.gz"
+      sha256 "fb269c0b1ef1e4923f41bb6556efec31e81bcc180a84891e3df84267d3d69b1e"
 
       define_method(:install) do
         bin.install "claude-usage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.3/claude-usage_0.5.3_Darwin_arm64.tar.gz"
-      sha256 "bd9142797b0f8e70eac76f53e3bb9f32e7a0ff93b531cdf85cac0e32fa89a0bf"
+      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.4/claude-usage_0.5.4_Darwin_arm64.tar.gz"
+      sha256 "bd2971bf0e2e4479be5e0ce6c5c7b2934c40b99d8e2d71b7e32b2af37623a8f0"
 
       define_method(:install) do
         bin.install "claude-usage"
@@ -29,15 +29,15 @@ class ClaudeUsage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.3/claude-usage_0.5.3_Linux_x86_64.tar.gz"
-      sha256 "9de59d60749a0a728b0292e8164280b0e7b71ef3920e20f276f67fbb06d26577"
+      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.4/claude-usage_0.5.4_Linux_x86_64.tar.gz"
+      sha256 "6d523afc13326be53a24d1fadd11e95ee33000189a02208c3093f21015cee183"
       define_method(:install) do
         bin.install "claude-usage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.3/claude-usage_0.5.3_Linux_arm64.tar.gz"
-      sha256 "7f005214d26664fdef83421ab4496922d1f5268e07f44e3b32cfb49aa880f228"
+      url "https://github.com/tonydisco/claude-usage/releases/download/v0.5.4/claude-usage_0.5.4_Linux_arm64.tar.gz"
+      sha256 "ad647c9d1951398909094a6f3d91de305332811fe7845929b16a06a9e5dfc281"
       define_method(:install) do
         bin.install "claude-usage"
       end
